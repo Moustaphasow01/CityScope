@@ -1,7 +1,7 @@
-#City Scope
+# City Scope
 City Scope is a web site that provides information about the city of Lille using a public API. This site was created to help citizens easily obtain information about their city, such as upcoming events, local points of interest, etc.
 
-#Technologies Used
+# Technologies Used
 City Scope was developed using the following technologies:
 
 HTML
