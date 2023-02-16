@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Table vlille_realtime</title>
+	<style>
+		table {
+			border-collapse: collapse;
+			width: 100%;
+		}
+		th, td {
+			text-align: left;
+			padding: 8px;
+			border-bottom: 1px solid #ddd;
+		}
+		th {
+			background-color: #f2f2f2;
+			color: #333;
+		}
+		tr:hover {
+			background-color: #f5f5f5;
+		}
+	</style>
+</head>
+<body>
+	<h1>Table vlille_realtime</h1>
+	<table>
+		<thead>
+			<tr>
+				<th>ID</th>
+				<th>Nom</th>
+				<th>Adresse</th>
+				<th>Commune</th>
+				<th>Etat</th>
+				<th>Type</th>
+				<th>Geo</th>
+				<th>Nombre de places disponibles</th>
+				<th>Nombre de vélos disponibles</th>
+				<th>Etat de connexion</th>
+				<th>Localisation</th>
+				<th>Date de mise à jour</th>
+			</tr>
+		</thead>
+		<tbody>
+			<?php
+			// Connexion à la base de données
+			$conn = mysqli_connect("localhost", "votre_nom_utilisateur", "votre_mot_de_passe", "cityscope_db");
+
+			// Vérification de la connexion
+			if (mysqli_connect_error()) {
+			    die("La connexion a échoué : " . mysqli_connect_error());
+			}
+
+			// Récupération des données de la table vlille_realtime
+			$sql = "SELECT * FROM vlille_realtime";
+			$result = mysqli_query($conn, $sql);
+
+			// Affichage des données dans le tableau HTML
+			if (mysqli_num_rows($result) > 0) {
+			    while($row = mysqli_fetch_assoc($result)) {
+			        echo "<tr>";
+			        echo "<td>" . $row["ID"] . "</td>";
+			        echo "<td>" . $row["nom"] . "</td>";
+			        echo "<td>" . $row["adresse"] . "</td>";
+			        echo "<td>" . $row["commune"] . "</td>";
+			        echo "<td>" . $row["etat"] . "</td>";
+			        echo "<td>" . $row["type"] . "</td>";
+			        echo "<td>" . $row["geo"] . "</td>";
+			        echo "<td>" . $row["nbPlacesDispo"] . "</td>";
+			        echo "<td>" . $row["nbVelosDispo"] . "</td>";
+			        echo "<td>" . $row["etatConnexion"] . "</td>";
+			        echo "<td>" . $row["localisation"] . "</td>";
+			        echo "<td>" . $row["datemiseajour"] . "</td>";
+			        echo "</tr>";
+			    }
+			} else {
+			    echo "Aucun résultat trouvé dans la table vlille_realtime.";
+			}
+
+			// Fermeture de la connexion
+			mysqli_close($conn);
+			?>
+		</tbody>
+	</table>
+</body>
+</html>
