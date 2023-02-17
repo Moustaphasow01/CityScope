@@ -1,5 +1,4 @@
 <?php
-<?php
 $username = 'root'; // nom d'utilisateur pour se connecter à la base de données
 $password = ''; // mot de passe pour se connecter à la base de données
 
@@ -12,11 +11,10 @@ try {
     }
 
     echo json_encode($data); // conversion du tableau $data en une chaîne JSON et affichage du résultat
+    print_r($data);
 
 } catch (PDOException $e) { // en cas d'erreur de connexion, affichage d'un message d'erreur et arrêt du script
     print "Error: " . $e->getMessage() . "<br />";
     die;
 }
-?>
-
 ?>
