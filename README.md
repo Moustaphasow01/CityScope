@@ -7,6 +7,7 @@ City Scope was developed using the following technologies:
 HTML
 CSS
 JavaScript
+php
 Lille Public API
 How to Use the Site
 To use the site, simply load it in your browser and explore the different sections to obtain the information you are looking for. The information is updated in real-time thanks to the use of the Lille public API.
