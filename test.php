@@ -31,6 +31,13 @@ echo "tations avec un nombre de places disponibles supérieur à 0 : \n";
 print_r($infos);
 //----------------------------------------------------------------
  */
+// Test de la fonction afficherCommunes
+echo "communes disponible : \n";
+$infos = getCommunes();
+echo($infos);
+
+
+
 
 
 ?>

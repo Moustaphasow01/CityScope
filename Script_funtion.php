@@ -176,6 +176,73 @@ function get_vlille_info() {
     // retourner le tableau de résultats
     return $vlille_info;
 }
+
+function afficherCommunes() {
+    // se connecter à la base de données
+$servername = "localhost";
+$username = "root";
+$password = "";
+$dbname = "cityscope_db";
+$conn = new mysqli($servername, $username, $password, $dbname);
+
+// vérifier la connexion
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+}
+
+// récupérer les communes distinctes de la table vlille_realtime sous forme de JSON
+$sql = "SELECT DISTINCT commune FROM vlille_realtime";
+$result = $conn->query($sql);
+
+// stocker les communes dans un tableau
+$communes = array();
+if ($result->num_rows > 0) {
+    while($row = $result->fetch_assoc()) {
+        $communes[] = $row["commune"];
+    }
+}
+
+// fermer la connexion
+$conn->close();
+print_r($communes);
+
+// retourner les communes sous format JSON
+echo json_encode($communes);
+
+}
+function getCommunes()
+ {
+    $communes = array(
+        "LILLE",
+        "MONS EN BAROEUL",
+        "VILLENEUVE D'ASCQ",
+        "LOMME",
+        "SAINT ANDRE LEZ LILLE",
+        "ROUBAIX",
+        "MARQUETTE",
+        "LILLE HELLEMMES",
+        "LA MADELEINE",
+        "HELLEMMES",
+        "LOOS",
+        "MARCQ EN BAROEUL",
+        "LAMBERSART",
+        "SAINT-ANDRÉ-LEZ-LILLE",
+        "TOURCOING",
+        "WASQUEHAL",
+        "HEM",
+        "HAUBOURDIN",
+        "FACHES THUMESNIL",
+        "RONCHIN",
+        "CROIX",
+        "WATTRELOS",
+        "FACHES-THUMESNIL",
+        "MARQUETTE-LEZ-LILLE",
+        "LEZENNES"
+    );
+    return json_encode($communes);
+}
+
 ?>
+
 
 
