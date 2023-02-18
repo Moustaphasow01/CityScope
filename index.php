@@ -21,7 +21,7 @@ $data = array();
 while($row = $result->fetch_assoc()) {
     $data[] = $row;
 }
-print_r($data);
+    print_r($data);
 
 
 // renvoyer les données au format JSON
