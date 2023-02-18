@@ -20,5 +20,8 @@ echo "Informations pour la commune de $commune : \n";
 print_r($infos);
 //----------------------------------------------------------------
  */
+$infos = getInfoWithBikesAvailable();
+echo "Les station avec des vélos disponibles : \n";
+print_r($infos);
 
 ?>
