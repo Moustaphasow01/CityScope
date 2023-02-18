@@ -12,11 +12,9 @@ if ($conn->connect_error) {
 }
 
 // récupérer les données de l'API
-$url = "https://opendata.lillemetropole.fr/api/records/1.0/search/?dataset=vlille-realtime&q=&facet=libelle&facet=nom&facet=commune&facet=etat&facet=type&facet=etatconnexion";
+$url = "https://opendata.lillemetropole.fr/api/records/1.0/search/?dataset=vlille-realtime&q=&rows=289&facet=libelle&facet=nom&facet=commune&facet=etat&facet=type&facet=etatconnexion";
 $data = json_decode(file_get_contents($url), true);
 print_r($data);
-
-
 
 // parcourir les enregistrements
 foreach ($data["records"] as $record) {
@@ -32,8 +30,19 @@ foreach ($data["records"] as $record) {
   $etatConnexion = (string) $record["fields"]["etatconnexion"];
   $datemiseajour = (string) $record["fields"]["datemiseajour"];
 
-  // insérer les données dans la table vlille_realtime
-  $sql = "INSERT INTO vlille_realtime (ID, nom, adresse, commune, etat, type, nbPlacesDispo, nbVelosDispo, etatConnexion, datemiseajour) VALUES ('$id', '$nom', '$adresse', '$commune', '$etat', '$type', '$nbPlacesDispo', '$nbVelosDispo', '$etatConnexion', '$datemiseajour')";
+  // vérifier si l'enregistrement existe déjà
+  $sql = "SELECT * FROM vlille_realtime WHERE ID = '$id'";
+  $result = $conn->query($sql);
+
+  // si l'enregistrement existe, mettre à jour les données
+  if ($result->num_rows > 0) {
+    $sql = "UPDATE vlille_realtime SET nom = '$nom', adresse = '$adresse', commune = '$commune', etat = '$etat', type = '$type', nbPlacesDispo = '$nbPlacesDispo', nbVelosDispo = '$nbVelosDispo', etatConnexion = '$etatConnexion', datemiseajour = '$datemiseajour' WHERE ID = '$id'";
+  }
+  // sinon, insérer un nouvel enregistrement
+  else {
+    $sql = "INSERT INTO vlille_realtime (ID, nom, adresse, commune, etat, type, nbPlacesDispo, nbVelosDispo, etatConnexion, datemiseajour) VALUES ('$id', '$nom', '$adresse', '$commune', '$etat', '$type', '$nbPlacesDispo', '$nbVelosDispo', '$etatConnexion', '$datemiseajour')";
+  }
+
   $conn->query($sql);
 }
 
