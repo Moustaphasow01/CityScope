@@ -140,6 +140,42 @@ function getInfoWithBikesAvailable() {
   // retourner le tableau associatif
   return $infoArray;
 }
+/**
 
+Récupère les informations des stations avec un nombre de places disponibles supérieur à 0
+@return array Tableau contenant les informations des stations avec un nombre de places disponibles supérieur à 0
+*/
+function get_vlille_info() {
+    // se connecter à la base de données
+    $servername = "localhost";
+    $username = "root";
+    $password = "";
+    $dbname = "cityscope_db";
+    $conn = new mysqli($servername, $username, $password, $dbname);
 
+    // vérifier la connexion
+    if ($conn->connect_error) {
+        die("Connection failed: " . $conn->connect_error);
+    }
+
+    // récupérer les données de la table vlille_realtime
+    $sql = "SELECT ID, nom, adresse, commune, etat, type, nbPlacesDispo, nbVelosDispo, etatConnexion, datemiseajour FROM vlille_realtime WHERE nbPlacesDispo > 0";
+    $result = $conn->query($sql);
+
+    // stocker les résultats dans un tableau
+    $vlille_info = array();
+    if ($result->num_rows > 0) {
+        while($row = $result->fetch_assoc()) {
+            $vlille_info[] = $row;
+        }
+    }
+
+    // fermer la connexion
+    $conn->close();
+
+    // retourner le tableau de résultats
+    return $vlille_info;
+}
 ?>
+
+
