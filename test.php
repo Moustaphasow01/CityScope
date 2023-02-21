@@ -11,13 +11,7 @@ $id = '30';
 $vlille = getStationById($id);
 echo "Informations pour l'id $id : \n";
 print_r($vlille);
-//----------------------------------------------------------------
 
-// Test de la fonction getInfosByCommune
-$commune = "Lille";
-$infos = getInfosByCommune($commune);
-echo "Informations pour la commune de $commune : \n";
-print_r($infos);
 //----------------------------------------------------------------
 
 // Test de la fonction getInfoWithBikesAvailable
@@ -30,14 +24,15 @@ $infos = get_vlille_info();
 echo "tations avec un nombre de places disponibles supérieur à 0 : \n";
 print_r($infos);
 //----------------------------------------------------------------
- */
-// Test de la fonction afficherCommunes
-echo "communes disponible : \n";
-$infos = getCommunes();
-echo($infos);
+*/
 
+//----------------------------------------------------------------
 
-
+// Test de la fonction getInfosByCommune
+$commune = "Lille";
+$infos = getInfosByCommune($commune);
+echo "Informations pour la commune de $commune : \n";
+print_r ($infos);
 
 
 ?>
