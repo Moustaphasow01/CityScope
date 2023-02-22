@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -46,11 +45,8 @@
           }
 	</style>
 <!--
-
 TemplateMo 564 Plot Listing
-
 https://templatemo.com/tm-564-plot-listing
-
 -->
   </head>
 
@@ -130,7 +126,7 @@ https://templatemo.com/tm-564-plot-listing
                     <div>
                       <div class="thumb">                 
                         <span class="icon"><img src="assets/images/search-icon-02.png" alt=""></span>
-                        ROUBAIX
+                        MONS EN BAROEUL
                       </div>
                     </div>
                     <div>
@@ -173,16 +169,17 @@ https://templatemo.com/tm-564-plot-listing
                 </div> 
                 <div class="col-lg-9">
                   <ul class="nacc">
-                <!-- Tableau des stations de lille  -->
+                  <!-- first category listing of items -->
                     <li class="active">
                       <div>
                       <body>
-                            
+                            <h1>V'Lille Info</h1>
+
                             <?php
                               include 'vlille_info.php';
-                              $vlille_info = getLilleInfo();
+                              $vlille_info = getVLilleInfo();
                             ?>
-                            
+
                             <table>
                               <tr>
                                 <th>Station</th>
@@ -192,7 +189,7 @@ https://templatemo.com/tm-564-plot-listing
                                 <th>Nombre de vélos disponibles</th>
                                 <th>Nombre de places disponibles</th>
                               </tr>
-                              
+
                               <?php foreach($vlille_info as $info): ?>
                                 <tr>
                                   <td><?= $info["nom"] ?></td>
@@ -203,53 +200,26 @@ https://templatemo.com/tm-564-plot-listing
                                   <td><?= $info["nbplacesdispo"] ?></td>
                                 </tr>
                               <?php endforeach; ?>
-                              
+
                             </table>
 
                       </div>
-                  </li>
-                    
-                    <!-- Tableau des stations de roubaix -->
-                    <li class="active">
-                      <div>                
-                      <?php
-                            
-                              $vlille_info = getVRoubaixInfo();
-                            ?>
-                                <table>
-                                  <thead>
-                                    <tr>
-                                      <th>Station</th>
-                                      <th>Commune</th>
-                                      <th>État</th>
-                                      <th>Connexion</th>
-                                      <th>Nombre de vélos disponibles</th>
-                                      <th>Nombre de places disponibles</th>
-                                    </tr>
-                                  </thead>
-                                  <tbody>
-                                    <?php foreach($vlille_info as $info): ?>
-                                    <tr>
-                                      <td><?= $info["nom"] ?></td>
-                                      <td><?= $info["commune"] ?></td>
-                                      <td><?= $info["etat"] ?></td>
-                                      <td><?= $info["etatconnexion"] ?></td>
-                                      <td><?= $info["nbvelosdispo"] ?></td>
-                                      <td><?= $info["nbplacesdispo"] ?></td>
-                                    </tr>
-                                    <?php endforeach; ?>
-                                  </tbody>
-                                </table>
+                    </li>
+
+                    <!-- second category listing of items -->
+                    <li>
+                      <div>
+                        hello world 2nd category;
                       </div>
                     </li>
-                    
+
                     <!-- third category first page -->
                     <li>
                       <div>
                         hello world 3 category;
                       </div>
                     </li>
-                    
+
                     <!-- 4th category 1st page -->
                     <li>
                       <div>
@@ -265,10 +235,10 @@ https://templatemo.com/tm-564-plot-listing
                       </div>
                     </li>
 
-                  
-                    
+
+
                   </ul>
-                  
+
                 </div>          
               </div>
             </div>
