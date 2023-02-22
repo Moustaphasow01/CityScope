@@ -33,6 +33,8 @@ $commune = "Lille";
 $infos = getInfosByCommune($commune);
 echo "Informations pour la commune de $commune : \n";
 print_r ($infos);
-
+//cho json_encode($infos);
+//getInfosByCommune($commune);
+//echo getCommunes();
 
 ?>

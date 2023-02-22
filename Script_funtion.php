@@ -93,7 +93,7 @@ function getInfosByCommune($commune) {
                 "datemiseajour" => $row["datemiseajour"]
             );
         }
-        // fermer la connexion et retourner le tableau d'informations
+        // fermer la connexion et retourner le tableau
         $conn->close();
         return $infos;
     } else {
@@ -241,7 +241,7 @@ function getCommunes()
     );
     return json_encode($communes);
 }
-
+//----------------------------------------------------------------
 ?>
 
 
