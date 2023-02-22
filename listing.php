@@ -130,7 +130,7 @@ https://templatemo.com/tm-564-plot-listing
                     <div>
                       <div class="thumb">                 
                         <span class="icon"><img src="assets/images/search-icon-02.png" alt=""></span>
-                        MONS EN BAROEUL
+                        ROUBAIX
                       </div>
                     </div>
                     <div>
@@ -173,15 +173,14 @@ https://templatemo.com/tm-564-plot-listing
                 </div> 
                 <div class="col-lg-9">
                   <ul class="nacc">
-                  <!-- first category listing of items -->
+                <!-- Tableau des stations de lille  -->
                     <li class="active">
                       <div>
                       <body>
-                            <h1>V'Lille Info</h1>
                             
                             <?php
                               include 'vlille_info.php';
-                              $vlille_info = getVLilleInfo();
+                              $vlille_info = getLilleInfo();
                             ?>
                             
                             <table>
@@ -208,12 +207,39 @@ https://templatemo.com/tm-564-plot-listing
                             </table>
 
                       </div>
-                    </li>
+                  </li>
                     
-                    <!-- second category listing of items -->
-                    <li>
-                      <div>
-                        hello world 2nd category;
+                    <!-- Tableau des stations de roubaix -->
+                    <li class="active">
+                      <div>                
+                      <?php
+                            
+                              $vlille_info = getVRoubaixInfo();
+                            ?>
+                                <table>
+                                  <thead>
+                                    <tr>
+                                      <th>Station</th>
+                                      <th>Commune</th>
+                                      <th>État</th>
+                                      <th>Connexion</th>
+                                      <th>Nombre de vélos disponibles</th>
+                                      <th>Nombre de places disponibles</th>
+                                    </tr>
+                                  </thead>
+                                  <tbody>
+                                    <?php foreach($vlille_info as $info): ?>
+                                    <tr>
+                                      <td><?= $info["nom"] ?></td>
+                                      <td><?= $info["commune"] ?></td>
+                                      <td><?= $info["etat"] ?></td>
+                                      <td><?= $info["etatconnexion"] ?></td>
+                                      <td><?= $info["nbvelosdispo"] ?></td>
+                                      <td><?= $info["nbplacesdispo"] ?></td>
+                                    </tr>
+                                    <?php endforeach; ?>
+                                  </tbody>
+                                </table>
                       </div>
                     </li>
                     
