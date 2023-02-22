@@ -103,7 +103,7 @@ function getRoubaixInfo() {
     }
     return $vlille_info;
     }
-    / Fonction qui retourne les informations des stations de la commune de Saint Andre Lez Lille
+    // Fonction qui retourne les informations des stations de la commune de Saint Andre Lez Lille
 function getSaintAndreLezLilleInfo() {
 $url = "https://opendata.lillemetropole.fr/api/records/1.0/search/?dataset=vlille-realtime&q=&rows=10&facet=libelle&facet=nom&facet=commune&facet=etat&facet=type&facet=etatconnexion&refine.commune=SAINT ANDRE LEZ LILLE";
 $json = file_get_contents($url);
@@ -360,7 +360,7 @@ function getCroixInfo() {
           $vlille_info[] = $record["fields"];
         }
         return $vlille_info;
-      }
+    }
       
   
 ?>
