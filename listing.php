@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -24,29 +25,33 @@
 
     <!-- CSS pour le tableau -->
     <style>
-          table {
-            border-collapse: collapse;
-            width: 100%;
-            font-family: Arial, sans-serif;
-            font-size: 14px;
-            text-align: left;
-          }
-          th, td {
-            padding: 8px;
-            text-align: left;
-            border-bottom: 1px solid #ddd;
-          }
-          th {
-            background-color: #4CAF50;
-            color: white;
-          }
-          tr:hover {
-            background-color: #f5f5f5;
-          }
-	</style>
+      table {
+        border-collapse: collapse;
+        width: 100%;
+        font-family: Arial, sans-serif;
+        font-size: 14px;
+        text-align: left;
+      }
+      th, td {
+        padding: 8px;
+        text-align: center; /* ajout de la propriété */
+        border-bottom: 1px solid #ddd;
+      }
+      th {
+        background-color:#800000 ;
+        color: white;
+      }
+      tr:hover {
+        background-color: #800000;
+        color: white;
+      }
+  </style>
 <!--
+
 TemplateMo 564 Plot Listing
+
 https://templatemo.com/tm-564-plot-listing
+
 -->
   </head>
 
@@ -77,11 +82,22 @@ https://templatemo.com/tm-564-plot-listing
             <!-- ***** Logo End ***** -->
             <!-- ***** Menu Start ***** -->
             <ul class="nav">
-              <li><a href="index.html">Acceuil</a></li>
-              <li><a href="category.html">Stations</a></li>
-              <li><a href="listing.html" class="active">Favoris</a></li>
-              <li><a href="contact.html">Contactez nous</a></li> 
-              <li><div class="main-white-button"><a href="#"><i class="fa fa-plus"></i> Add Your Listing</a></div></li> 
+            <a href="index.html" class="active">Acceuil</a>
+                </li>
+                 <!--  <li>
+                  <a href="category.php">Favoris</a>
+                </li>-->
+                <li>
+                  <a href="listing.php">Stations</a>
+                </li>
+                <li>
+                  <a href="contact.html">Contactez nous </a>
+                </li>
+                <li>
+                  <div class="main-white-button">
+                    <a href="#">
+                      <i class="fa fa-plus"></i> Ajoutez aux Favoris </a>
+            </div></li> 
             </ul>        
             <a class='menu-trigger'>
                 <span>Menu</span>
@@ -119,67 +135,130 @@ https://templatemo.com/tm-564-plot-listing
                   <div class="menu">
                     <div class="first-thumb active">
                       <div class="thumb">
-                        <span class="icon"><img src="assets/images/search-icon-01.png" alt=""></span>
+                        <span class="icon"><img src="assets/images/a.png" alt=""></span>
                         Lille
+                      </div> 
+                    </div>
+                    <div>
+                      <div class="thumb">                 
+                        <span class="icon"><img src="assets/images/a.png" alt=""></span>
+                        Roubaix
                       </div>
                     </div>
                     <div>
                       <div class="thumb">                 
-                        <span class="icon"><img src="assets/images/search-icon-02.png" alt=""></span>
-                        MONS EN BAROEUL
+                        <span class="icon"><img src="assets/images/a.png" alt=""></span>
+                        Tourcoing
                       </div>
                     </div>
                     <div>
                       <div class="thumb">                 
-                        <span class="icon"><img src="assets/images/search-icon-02.png" alt=""></span>
+                        <span class="icon"><img src="assets/images/a.png" alt=""></span>
                         VILLENEUVE D'ASCQ
                       </div>
                     </div>
                     <div>
                       <div class="thumb">                 
-                        <span class="icon"><img src="assets/images/search-icon-02.png" alt=""></span>
+                        <span class="icon"><img src="assets/images/a.png" alt=""></span>
+                        MONS EN BAROEUL
+                      </div> 
+                    </div>
+                    <div>
+                      <div class="thumb">                 
+                        <span class="icon"><img src="assets/images/a.png" alt=""></span>
+                        LA MADELEINE
+                      </div>
+                    </div>
+                    <div>
+                      <div class="thumb">                 
+                        <span class="icon"><img src="assets/images/a.png" alt=""></span>
+                        LAMBERSART
+                      </div>
+                    </div>
+                    <div>
+                      <div class="thumb">                 
+                        <span class="icon"><img src="assets/images/a.png" alt=""></span>
+                        LILLE HELLEMMES
+                      </div>
+                    </div>
+                    <div>
+                      <div class="thumb">                 
+                        <span class="icon"><img src="assets/images/a.png" alt=""></span>
+                        LOOS
+                      </div>
+                    </div>
+                    <div>
+                      <div class="thumb">                 
+                        <span class="icon"><img src="assets/images/a.png" alt=""></span>
+                        SAINT ANDRE LEZ LILLE                      </div>
+                    </div>
+                    <div>
+                      <div class="thumb">                 
+                        <span class="icon"><img src="assets/images/a.png" alt=""></span>
+                        CROIX
+                      </div>
+                    </div>
+                    <div>
+                      <div class="thumb">                 
+                        <span class="icon"><img src="assets/images/a.png" alt=""></span>
+                        MARCQ 
+                      </div>
+                    </div>
+                    <div>
+                      <div class="thumb">                 
+                        <span class="icon"><img src="assets/images/a.png" alt=""></span>
+                        HEM
+                      </div>
+                    </div>
+                    <div>
+                      <div class="thumb">                 
+                        <span class="icon"><img src="assets/images/a.png" alt=""></span>
                         LOMME
                       </div>
                     </div>
                     <div>
                       <div class="thumb">                 
-                        <span class="icon"><img src="assets/images/search-icon-02.png" alt=""></span>
-                        Food &amp; Life
+                        <span class="icon"><img src="assets/images/a.png" alt=""></span>
+                        MARQUETTE
                       </div>
                     </div>
                     <div>
                       <div class="thumb">                 
-                        <span class="icon"><img src="assets/images/search-icon-02.png" alt=""></span>
-                        Food &amp; Life
+                        <span class="icon"><img src="assets/images/a.png" alt=""></span>
+                        RONCHIN
                       </div>
                     </div>
                     <div>
                       <div class="thumb">                 
-                        <span class="icon"><img src="assets/images/search-icon-03.png" alt=""></span>
-                        Cars
+                        <span class="icon"><img src="assets/images/a.png" alt=""></span>
+                        WATTRELOS
                       </div>
                     </div>
-                    <div class="last-thumb">
+                    <div>
                       <div class="thumb">                 
-                        <span class="icon"><img src="assets/images/search-icon-04.png" alt=""></span>
-                        Traveling
+                        <span class="icon"><img src="assets/images/a.png" alt=""></span>
+                        FACHES THUMESNIL
                       </div>
                     </div>
+                    <div>
+                      <div class="thumb">                 
+                        <span class="icon"><img src="assets/images/a.png" alt=""></span>
+                        HAUBOURDIN
+                      </div>
+                    </div>          
                   </div>
                 </div> 
                 <div class="col-lg-9">
                   <ul class="nacc">
-                  <!-- first category listing of items -->
+                  <!-- Lille commune Station -->
                     <li class="active">
                       <div>
-                      <body>
-                            <h1>V'Lille Info</h1>
-
+                      <body>                          
                             <?php
                               include 'vlille_info.php';
                               $vlille_info = getVLilleInfo();
                             ?>
-
+                            
                             <table>
                               <tr>
                                 <th>Station</th>
@@ -189,7 +268,7 @@ https://templatemo.com/tm-564-plot-listing
                                 <th>Nombre de vélos disponibles</th>
                                 <th>Nombre de places disponibles</th>
                               </tr>
-
+                              
                               <?php foreach($vlille_info as $info): ?>
                                 <tr>
                                   <td><?= $info["nom"] ?></td>
@@ -200,45 +279,596 @@ https://templatemo.com/tm-564-plot-listing
                                   <td><?= $info["nbplacesdispo"] ?></td>
                                 </tr>
                               <?php endforeach; ?>
-
+                              
                             </table>
 
                       </div>
                     </li>
-
-                    <!-- second category listing of items -->
-                    <li>
+                    
+                    <!-- Roubaix commune Station -->
+                    <li class="active">
                       <div>
-                        hello world 2nd category;
+                            <?php
+                              $vlille_info = getVRoubaixInfo();
+                            ?>
+                            
+                            <table>
+                              <tr>
+                                <th>Station</th>
+                                <th>Commune</th>
+                                <th>État</th>
+                                <th>Connexion</th>
+                                <th>Nombre de vélos disponibles</th>
+                                <th>Nombre de places disponibles</th>
+                              </tr>
+                              
+                              <?php foreach($vlille_info as $info): ?>
+                                <tr>
+                                  <td><?= $info["nom"] ?></td>
+                                  <td><?= $info["commune"] ?></td>
+                                  <td><?= $info["etat"] ?></td>
+                                  <td><?= $info["etatconnexion"] ?></td>
+                                  <td><?= $info["nbvelosdispo"] ?></td>
+                                  <td><?= $info["nbplacesdispo"] ?></td>
+                                </tr>
+                              <?php endforeach; ?>
+                              
+                            </table>
+
                       </div>
                     </li>
-
-                    <!-- third category first page -->
-                    <li>
+                    
+                    <!-- Tourcoing commune station -->
+                    <li class="active">
                       <div>
-                        hello world 3 category;
+                            <?php
+                              $vlille_info = getVTourcoingInfo();
+                            ?>
+                            
+                            <table>
+                              <tr>
+                                <th>Station</th>
+                                <th>Commune</th>
+                                <th>État</th>
+                                <th>Connexion</th>
+                                <th>Nombre de vélos disponibles</th>
+                                <th>Nombre de places disponibles</th>
+                              </tr>
+                              
+                              <?php foreach($vlille_info as $info): ?>
+                                <tr>
+                                  <td><?= $info["nom"] ?></td>
+                                  <td><?= $info["commune"] ?></td>
+                                  <td><?= $info["etat"] ?></td>
+                                  <td><?= $info["etatconnexion"] ?></td>
+                                  <td><?= $info["nbvelosdispo"] ?></td>
+                                  <td><?= $info["nbplacesdispo"] ?></td>
+                                </tr>
+                              <?php endforeach; ?>
+                              
+                            </table>
+
                       </div>
                     </li>
-
-                    <!-- 4th category 1st page -->
-                    <li>
+                    
+                    <!-- Villeneuve  commune Station -->
+                    <li class="active">
                       <div>
-                        hello world 4 category;
+                            <?php
+                              $vlille_info = getVVilleneuveInfo();
+                            ?>
+                            
+                            <table>
+                              <tr>
+                                <th>Station</th>
+                                <th>Commune</th>
+                                <th>État</th>
+                                <th>Connexion</th>
+                                <th>Nombre de vélos disponibles</th>
+                                <th>Nombre de places disponibles</th>
+                              </tr>
+                              
+                              <?php foreach($vlille_info as $info): ?>
+                                <tr>
+                                  <td><?= $info["nom"] ?></td>
+                                  <td><?= $info["commune"] ?></td>
+                                  <td><?= $info["etat"] ?></td>
+                                  <td><?= $info["etatconnexion"] ?></td>
+                                  <td><?= $info["nbvelosdispo"] ?></td>
+                                  <td><?= $info["nbplacesdispo"] ?></td>
+                                </tr>
+                              <?php endforeach; ?>
+                              
+                            </table>
 
                       </div>
                     </li>
-                    <!-- 5th category 1st page -->
-                    <li>
+                    <!-- MONS EN BAROEUL commune Station -->
+                    <li class="active">
                       <div>
-                        hello world 5 category;
+                            <?php
+                              $vlille_info = getVMONS_EN_BAROEUL();
+                            ?>
+                            
+                            <table>
+                              <tr>
+                                <th>Station</th>
+                                <th>Commune</th>
+                                <th>État</th>
+                                <th>Connexion</th>
+                                <th>Nombre de vélos disponibles</th>
+                                <th>Nombre de places disponibles</th>
+                              </tr>
+                              
+                              <?php foreach($vlille_info as $info): ?>
+                                <tr>
+                                  <td><?= $info["nom"] ?></td>
+                                  <td><?= $info["commune"] ?></td>
+                                  <td><?= $info["etat"] ?></td>
+                                  <td><?= $info["etatconnexion"] ?></td>
+                                  <td><?= $info["nbvelosdispo"] ?></td>
+                                  <td><?= $info["nbplacesdispo"] ?></td>
+                                </tr>
+                              <?php endforeach; ?>
+                              
+                            </table>
 
                       </div>
                     </li>
+                    <!-- La madelaine  commune Station -->
+                    <li class="active">
+                      <div>
+                            <?php
+                              $vlille_info = getVLaMadelaine();
+                            ?>
+                            
+                            <table>
+                              <tr>
+                                <th>Station</th>
+                                <th>Commune</th>
+                                <th>État</th>
+                                <th>Connexion</th>
+                                <th>Nombre de vélos disponibles</th>
+                                <th>Nombre de places disponibles</th>
+                              </tr>
+                              
+                              <?php foreach($vlille_info as $info): ?>
+                                <tr>
+                                  <td><?= $info["nom"] ?></td>
+                                  <td><?= $info["commune"] ?></td>
+                                  <td><?= $info["etat"] ?></td>
+                                  <td><?= $info["etatconnexion"] ?></td>
+                                  <td><?= $info["nbvelosdispo"] ?></td>
+                                  <td><?= $info["nbplacesdispo"] ?></td>
+                                </tr>
+                              <?php endforeach; ?>
+                              
+                            </table>
 
+                      </div>
+                    </li>
+                    <!-- LAMBERSART  commune Station -->
+                    <li class="active">
+                      <div>
+                            <?php
+                              $vlille_info = getVLAMBERSART();
+                            ?>
+                            
+                            <table>
+                              <tr>
+                                <th>Station</th>
+                                <th>Commune</th>
+                                <th>État</th>
+                                <th>Connexion</th>
+                                <th>Nombre de vélos disponibles</th>
+                                <th>Nombre de places disponibles</th>
+                              </tr>
+                              
+                              <?php foreach($vlille_info as $info): ?>
+                                <tr>
+                                  <td><?= $info["nom"] ?></td>
+                                  <td><?= $info["commune"] ?></td>
+                                  <td><?= $info["etat"] ?></td>
+                                  <td><?= $info["etatconnexion"] ?></td>
+                                  <td><?= $info["nbvelosdispo"] ?></td>
+                                  <td><?= $info["nbplacesdispo"] ?></td>
+                                </tr>
+                              <?php endforeach; ?>
+                              
+                            </table>
 
+                      </div>
+                    </li>
+                     <!-- LILLE HELLEMMES  commune Station -->
+                    <li class="active">
+                      <div>
+                            <?php
+                              $vlille_info = getVLILLEHELLEMMES();
+                            ?>
+                            
+                            <table>
+                              <tr>
+                                <th>Station</th>
+                                <th>Commune</th>
+                                <th>État</th>
+                                <th>Connexion</th>
+                                <th>Nombre de vélos disponibles</th>
+                                <th>Nombre de places disponibles</th>
+                              </tr>
+                              
+                              <?php foreach($vlille_info as $info): ?>
+                                <tr>
+                                  <td><?= $info["nom"] ?></td>
+                                  <td><?= $info["commune"] ?></td>
+                                  <td><?= $info["etat"] ?></td>
+                                  <td><?= $info["etatconnexion"] ?></td>
+                                  <td><?= $info["nbvelosdispo"] ?></td>
+                                  <td><?= $info["nbplacesdispo"] ?></td>
+                                </tr>
+                              <?php endforeach; ?>
+                              
+                            </table>
 
+                      </div>
+                    </li>
+                    <!-- LOOS  commune Station -->
+                      <li class="active">
+                      <div>
+                            <?php
+                              $vlille_info = getVLOOS();
+                            ?>
+                            
+                            <table>
+                              <tr>
+                                <th>Station</th>
+                                <th>Commune</th>
+                                <th>État</th>
+                                <th>Connexion</th>
+                                <th>Nombre de vélos disponibles</th>
+                                <th>Nombre de places disponibles</th>
+                              </tr>
+                              
+                              <?php foreach($vlille_info as $info): ?>
+                                <tr>
+                                  <td><?= $info["nom"] ?></td>
+                                  <td><?= $info["commune"] ?></td>
+                                  <td><?= $info["etat"] ?></td>
+                                  <td><?= $info["etatconnexion"] ?></td>
+                                  <td><?= $info["nbvelosdispo"] ?></td>
+                                  <td><?= $info["nbplacesdispo"] ?></td>
+                                </tr>
+                              <?php endforeach; ?>
+                              
+                            </table>
+
+                      </div>
+                    </li>
+                    <!-- SAINT ANDRE LEZ LILLE  commune Station -->
+                    <li class="active">
+                      <div>
+                            <?php
+                              $vlille_info = getVSAINT_ANDRE_LEZ_LILLE();
+                            ?>
+                            
+                            <table>
+                              <tr>
+                                <th>Station</th>
+                                <th>Commune</th>
+                                <th>État</th>
+                                <th>Connexion</th>
+                                <th>Nombre de vélos disponibles</th>
+                                <th>Nombre de places disponibles</th>
+                              </tr>
+                              
+                              <?php foreach($vlille_info as $info): ?>
+                                <tr>
+                                  <td><?= $info["nom"] ?></td>
+                                  <td><?= $info["commune"] ?></td>
+                                  <td><?= $info["etat"] ?></td>
+                                  <td><?= $info["etatconnexion"] ?></td>
+                                  <td><?= $info["nbvelosdispo"] ?></td>
+                                  <td><?= $info["nbplacesdispo"] ?></td>
+                                </tr>
+                              <?php endforeach; ?>
+                              
+                            </table>
+
+                      </div>
+                    </li>
+                    <!-- CROIX  commune Station -->
+                      <li class="active">
+                      <div>
+                            <?php
+                              $vlille_info = getVCROIX();
+                            ?>
+                            
+                            <table>
+                              <tr>
+                                <th>Station</th>
+                                <th>Commune</th>
+                                <th>État</th>
+                                <th>Connexion</th>
+                                <th>Nombre de vélos disponibles</th>
+                                <th>Nombre de places disponibles</th>
+                              </tr>
+                              
+                              <?php foreach($vlille_info as $info): ?>
+                                <tr>
+                                  <td><?= $info["nom"] ?></td>
+                                  <td><?= $info["commune"] ?></td>
+                                  <td><?= $info["etat"] ?></td>
+                                  <td><?= $info["etatconnexion"] ?></td>
+                                  <td><?= $info["nbvelosdispo"] ?></td>
+                                  <td><?= $info["nbplacesdispo"] ?></td>
+                                </tr>
+                              <?php endforeach; ?>
+                              
+                            </table>
+
+                      </div>
+                    </li>
+                    </li>
+                    <!-- MARCQ EN BAROEUL  commune Station -->
+                      <li class="active">
+                      <div>
+                            <?php
+                              $vlille_info = getVMARCQ_EN_BAROEUL();
+                            ?>
+                            
+                            <table>
+                              <tr>
+                                <th>Station</th>
+                                <th>Commune</th>
+                                <th>État</th>
+                                <th>Connexion</th>
+                                <th>Nombre de vélos disponibles</th>
+                                <th>Nombre de places disponibles</th>
+                              </tr>
+                              
+                              <?php foreach($vlille_info as $info): ?>
+                                <tr>
+                                  <td><?= $info["nom"] ?></td>
+                                  <td><?= $info["commune"] ?></td>
+                                  <td><?= $info["etat"] ?></td>
+                                  <td><?= $info["etatconnexion"] ?></td>
+                                  <td><?= $info["nbvelosdispo"] ?></td>
+                                  <td><?= $info["nbplacesdispo"] ?></td>
+                                </tr>
+                              <?php endforeach; ?>
+                              
+                            </table>
+
+                      </div>
+                    </li>
+                    </li>
+                    <!-- HEM  commune Station -->
+                      <li class="active">
+                      <div>
+                            <?php
+                              $vlille_info = getVHEM();
+                            ?>
+                            
+                            <table>
+                              <tr>
+                                <th>Station</th>
+                                <th>Commune</th>
+                                <th>État</th>
+                                <th>Connexion</th>
+                                <th>Nombre de vélos disponibles</th>
+                                <th>Nombre de places disponibles</th>
+                              </tr>
+                              
+                              <?php foreach($vlille_info as $info): ?>
+                                <tr>
+                                  <td><?= $info["nom"] ?></td>
+                                  <td><?= $info["commune"] ?></td>
+                                  <td><?= $info["etat"] ?></td>
+                                  <td><?= $info["etatconnexion"] ?></td>
+                                  <td><?= $info["nbvelosdispo"] ?></td>
+                                  <td><?= $info["nbplacesdispo"] ?></td>
+                                </tr>
+                              <?php endforeach; ?>
+                              
+                            </table>
+
+                      </div>
+                    </li>
+                    <!-- LOMME  commune Station -->
+                                        <li class="active">
+                      <div>
+                            <?php
+                              $vlille_info = getVLOMME();
+                            ?>
+                            
+                            <table>
+                              <tr>
+                                <th>Station</th>
+                                <th>Commune</th>
+                                <th>État</th>
+                                <th>Connexion</th>
+                                <th>Nombre de vélos disponibles</th>
+                                <th>Nombre de places disponibles</th>
+                              </tr>
+                              
+                              <?php foreach($vlille_info as $info): ?>
+                                <tr>
+                                  <td><?= $info["nom"] ?></td>
+                                  <td><?= $info["commune"] ?></td>
+                                  <td><?= $info["etat"] ?></td>
+                                  <td><?= $info["etatconnexion"] ?></td>
+                                  <td><?= $info["nbvelosdispo"] ?></td>
+                                  <td><?= $info["nbplacesdispo"] ?></td>
+                                </tr>
+                              <?php endforeach; ?>
+                              
+                            </table>
+
+                      </div>
+                    </li>
+                     <!-- MARQUETTE  commune Station -->
+                      <li class="active">
+                      <div>
+                            <?php
+                              $vlille_info = getVMARQUETTE();
+                            ?>
+                            
+                            <table>
+                              <tr>
+                                <th>Station</th>
+                                <th>Commune</th>
+                                <th>État</th>
+                                <th>Connexion</th>
+                                <th>Nombre de vélos disponibles</th>
+                                <th>Nombre de places disponibles</th>
+                              </tr>
+                              
+                              <?php foreach($vlille_info as $info): ?>
+                                <tr>
+                                  <td><?= $info["nom"] ?></td>
+                                  <td><?= $info["commune"] ?></td>
+                                  <td><?= $info["etat"] ?></td>
+                                  <td><?= $info["etatconnexion"] ?></td>
+                                  <td><?= $info["nbvelosdispo"] ?></td>
+                                  <td><?= $info["nbplacesdispo"] ?></td>
+                                </tr>
+                              <?php endforeach; ?>
+                              
+                            </table>
+
+                      </div>
+                    </li>
+                    <!-- RONCHIN  commune Station -->
+                     <li class="active">
+                      <div>
+                            <?php
+                              $vlille_info = getVRONCHIN();
+                            ?>
+                            
+                            <table>
+                              <tr>
+                                <th>Station</th>
+                                <th>Commune</th>
+                                <th>État</th>
+                                <th>Connexion</th>
+                                <th>Nombre de vélos disponibles</th>
+                                <th>Nombre de places disponibles</th>
+                              </tr>
+                              
+                              <?php foreach($vlille_info as $info): ?>
+                                <tr>
+                                  <td><?= $info["nom"] ?></td>
+                                  <td><?= $info["commune"] ?></td>
+                                  <td><?= $info["etat"] ?></td>
+                                  <td><?= $info["etatconnexion"] ?></td>
+                                  <td><?= $info["nbvelosdispo"] ?></td>
+                                  <td><?= $info["nbplacesdispo"] ?></td>
+                                </tr>
+                              <?php endforeach; ?>
+                              
+                            </table>
+
+                      </div>
+                    </li>
+                    <!-- WATTRELOS  commune Station -->
+                   <li class="active">
+                      <div>
+                            <?php
+                              $vlille_info = getVWATTRELOS();
+                            ?>
+                            
+                            <table>
+                              <tr>
+                                <th>Station</th>
+                                <th>Commune</th>
+                                <th>État</th>
+                                <th>Connexion</th>
+                                <th>Nombre de vélos disponibles</th>
+                                <th>Nombre de places disponibles</th>
+                              </tr>
+                              
+                              <?php foreach($vlille_info as $info): ?>
+                                <tr>
+                                  <td><?= $info["nom"] ?></td>
+                                  <td><?= $info["commune"] ?></td>
+                                  <td><?= $info["etat"] ?></td>
+                                  <td><?= $info["etatconnexion"] ?></td>
+                                  <td><?= $info["nbvelosdispo"] ?></td>
+                                  <td><?= $info["nbplacesdispo"] ?></td>
+                                </tr>
+                              <?php endforeach; ?>
+                              
+                            </table>
+
+                       </div>
+                  </li>
+                   <!-- FACHES THUMESNIL  commune Station -->
+                  <li class="active">
+                      <div>
+                            <?php
+                              $vlille_info = getVFACHES_THUMESNIL();
+                            ?>
+                            
+                            <table>
+                              <tr>
+                                <th>Station</th>
+                                <th>Commune</th>
+                                <th>État</th>
+                                <th>Connexion</th>
+                                <th>Nombre de vélos disponibles</th>
+                                <th>Nombre de places disponibles</th>
+                              </tr>
+                              
+                              <?php foreach($vlille_info as $info): ?>
+                                <tr>
+                                  <td><?= $info["nom"] ?></td>
+                                  <td><?= $info["commune"] ?></td>
+                                  <td><?= $info["etat"] ?></td>
+                                  <td><?= $info["etatconnexion"] ?></td>
+                                  <td><?= $info["nbvelosdispo"] ?></td>
+                                  <td><?= $info["nbplacesdispo"] ?></td>
+                                </tr>
+                              <?php endforeach; ?>
+                              
+                            </table>
+
+                       </div>
+                  </li>
+                   <!-- HAUBOURDIN  commune Station -->
+                    <li class="active">
+                      <div>
+                            <?php
+                              $vlille_info = getVHAUBOURDIN();
+                            ?>
+                            
+                            <table>
+                              <tr>
+                                <th>Station</th>
+                                <th>Commune</th>
+                                <th>État</th>
+                                <th>Connexion</th>
+                                <th>Nombre de vélos disponibles</th>
+                                <th>Nombre de places disponibles</th>
+                              </tr>
+                              
+                              <?php foreach($vlille_info as $info): ?>
+                                <tr>
+                                  <td><?= $info["nom"] ?></td>
+                                  <td><?= $info["commune"] ?></td>
+                                  <td><?= $info["etat"] ?></td>
+                                  <td><?= $info["etatconnexion"] ?></td>
+                                  <td><?= $info["nbvelosdispo"] ?></td>
+                                  <td><?= $info["nbplacesdispo"] ?></td>
+                                </tr>
+                              <?php endforeach; ?>
+                              
+                            </table>
+
+                       </div>
+                  </li>
+                    
+                    
                   </ul>
-
+                  
                 </div>          
               </div>
             </div>
@@ -249,63 +879,78 @@ https://templatemo.com/tm-564-plot-listing
   </div>
 
   <footer>
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-4">
-          <div class="about">
-            <div class="logo">
-              <img src="assets/images/black-logo.png" alt="">
-            </div>
-            <p>Lorem ipsum dolor sit amet, consectetur adicingi elit, sed do eiusmod tempor incididunt ut et dolore magna aliqua.</p>
-          </div>
-        </div>
-        <div class="col-lg-4">
-          <div class="helpful-links">
-            <h4>Helpful Links</h4>
-            <div class="row">
-              <div class="col-lg-6">
-                <ul>
-                  <li><a href="#">Categories</a></li>
-                  <li><a href="#">Reviews</a></li>
-                  <li><a href="#">Listing</a></li>
-                  <li><a href="#">Contact Us</a></li>
-                </ul>
-              </div>
-              <div class="col-lg-6">
-                <ul>
-                  <li><a href="#">About Us</a></li>
-                  <li><a href="#">Awards</a></li>
-                  <li><a href="#">Useful Sites</a></li>
-                  <li><a href="#">Privacy Policy</a></li>
-                </ul>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4">
+            <div class="about">
+              <div class="logo">
+                <img src="assets/images/white-logo.png" alt="CityScope">
               </div>
             </div>
           </div>
-        </div>
-        <div class="col-lg-4">
-          <div class="contact-us">
-            <h4>Contact Us</h4>
-            <p>27th Street of New Town, Digital Villa</p>
-            <div class="row">
-              <div class="col-lg-6">
-                <a href="#">010-020-0340</a>
-              </div>
-              <div class="col-lg-6">
-                <a href="#">090-080-0760</a>
+          <div class="col-lg-4">
+            <div class="helpful-links">
+              <div class="row">
+                <div class="col-lg-6 col-sm-6">
+                  <ul>
+                    <li>
+                      <a href="#">Acceuil</a>
+                    </li>
+                    <li>
+                      <a href="#">Favoris</a>
+                    </li>
+                    <li>
+                      <a href="#">Stations</a>
+                    </li>
+                    <li>
+                      <a href="#"></a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="col-lg-6">
+                  <ul>
+                    <li>
+                      <a href="#"></a>
+                    </li>
+                    <li>
+                      <a href="#"></a>
+                    </li>
+                    <li>
+                      <a href="#"></a>
+                    </li>
+                    <li>
+                      <a href="#"></a>
+                    </li>
+                  </ul>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-        <div class="col-lg-12">
-          <div class="sub-footer">
-            <p>Copyright © 2021 Plot Listing Co., Ltd. All Rights Reserved.
-            <br>
-			Design: <a rel="nofollow" href="https://templatemo.com" title="CSS Templates">TemplateMo</a></p>
+          <div class="col-lg-4">
+            <div class="contact-us">
+              <h4>Contactez nous</h4>
+              
+              <div class="row">
+                <div class="col-lg-6">
+                  <a href="#"></a>
+                </div>
+                <div class="col-lg-6">
+                  <a href="#"></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-12">
+            <div class="sub-footer">
+              <p>Copyright © 2021 Plot Listing Co., Ltd. All Rights Reserved.
+                <br>
+              <p><br>  <a rel="nofollow" href="https://templatemo.com" title="CSS Templates"></a>
+              </p>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </footer>
+</footer>
 
     <!-- Scripts -->
       <script src="vendor/jquery/jquery.min.js"></script>
