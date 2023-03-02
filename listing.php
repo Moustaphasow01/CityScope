@@ -72,19 +72,19 @@ https://templatemo.com/tm-564-plot-listing
 
   <!-- ***** Header Area Start ***** -->
   <header class="header-area header-sticky wow slideInDown" data-wow-duration="0.75s" data-wow-delay="0s">
-    <div class="container">
-      <div class="row">
-        <div class="col-12">
-          <nav class="main-nav">
-            <!-- ***** Logo Start ***** -->
-            <a href="index.html" class="logo">
-            </a>
-            <!-- ***** Logo End ***** -->
-            <!-- ***** Menu Start ***** -->
-            <ul class="nav">
-            <a href="index.html" class="active">Acceuil</a>
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <nav class="main-nav">
+              <!-- ***** Logo Start ***** -->
+              <a href="index.html" class="logo"></a>
+              <!-- ***** Logo End ***** -->
+              <!-- ***** Menu Start ***** -->
+              <ul class="nav">
+                <li>
+                  <a href="index.html" class="active">Acceuil</a>
                 </li>
-                 <!--  <li>
+                <!--  <li>
                   <a href="category.php">Favoris</a>
                 </li>-->
                 <li>
@@ -97,17 +97,18 @@ https://templatemo.com/tm-564-plot-listing
                   <div class="main-white-button">
                     <a href="#">
                       <i class="fa fa-plus"></i> Ajoutez aux Favoris </a>
-            </div></li> 
-            </ul>        
-            <a class='menu-trigger'>
+                  </div>
+                </li>
+              </ul>
+              <a class='menu-trigger'>
                 <span>Menu</span>
-            </a>
-            <!-- ***** Menu End ***** -->
-          </nav>
+              </a>
+              <!-- ***** Menu End ***** -->
+            </nav>
+          </div>
         </div>
       </div>
-    </div>
-  </header>
+    </header>
   <!-- ***** Header Area End ***** -->
 
   <div class="page-heading">
