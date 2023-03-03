@@ -82,7 +82,7 @@ https://templatemo.com/tm-564-plot-listing
               <!-- ***** Menu Start ***** -->
               <ul class="nav">
                 <li>
-                  <a href="index.html" class="active">Acceuil</a>
+                  <a href="index.html" class="active">Accueil</a>
                 </li>
                 <!--  <li>
                   <a href="category.php">Favoris</a>
@@ -895,7 +895,7 @@ https://templatemo.com/tm-564-plot-listing
                 <div class="col-lg-6 col-sm-6">
                   <ul>
                     <li>
-                      <a href="#">Acceuil</a>
+                      <a href="#">Accueil</a>
                     </li>
                     <li>
                       <a href="#">Favoris</a>
